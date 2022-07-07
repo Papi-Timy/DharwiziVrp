@@ -10,7 +10,8 @@ urlpatterns = [
      path('logout/',views.logoutPage , name='logout'),
      path('profile/', views.profilePage, name='profile'),
       path('register/', views.addUser, name='register'),
-       path('result/', views.tabuResult, name='tabuResult')
+       path('result/', views.tabuResult, name='tabuResult'),
+        path('map/', views.map, name='map')
 
 ]
 

@@ -1,115 +1,107 @@
 {
     "locations":[
+       
        {
-          "name":"DCS",
-          "coords":[
-             -20.16782,
-             57.48314
-          ],
-          "city":"Port Louis",
-          "id":"14"
-       },
-       {
-          "name":"Voila Hotel",
+          "name":"Dharwizi",
           "coords":[
              -20.22442,
              57.49452
           ],
-          "city":"Bagatelle",
+          "city":"Harare",
           "id":"1"
        },
        {
-          "name":"Intercontinental",
+          "name":"150 ENTERPRISE ROAD, HIGHLANDS",
           "coords":[
              -20.08292,
              57.517429
           ],
-          "city":"Balaclava",
+          "city":"Harare",
           "id":"2"
        },
        {
-          "name":"Lagoon Attitude Hotel",
+          "name":"WAVERLY BLANKETS: 122 KELVIN ROAD SOUTH",
           "coords":[
              -20.01511,
              57.58171
           ],
-          "city":"Anse La Raie",
+          "city":"Harare",
           "id":"3"
        },
        {
-          "name":"ClubMed ",
+          "name":"TV SALES AND HOME, 16 KELVIN ROAD ",
           "coords":[
              -20.00447,
              57.56293
           ],
-          "city":"Pointe aux Canonniers",
+          "city":"Harare",
           "id":"4"
        },
        {
-          "name":"LUX Grand Gaube Resort & Villas",
+          "name":"SHASHA TOBACCO: 376 LIMPOPO WAY",
           "coords":[
              -20.02255,
              57.65055
           ],
-          "city":"Grand Gaube",
+          "city":"Harare",
           "id":"6"
        },
        {
-          "name":"One&Only Le Saint Géran",
+          "name":"SEAPRIDES FOODS: MUKUVISI STAND 18363",
           "coords":[
              -20.0924,
              57.69941
           ],
-          "city":"Pointe de Flacq",
+          "city":"Harer",
           "id":"7"
        },
        {
-          "name":"Holiday inn",
+          "name":"324 HARROW ROAD",
           "coords":[
              -20.2833,
              57.549999
           ],
-          "city":"Plaine Magnien ",
+          "city":"GLENDALE SPINNERS: 326 MUTITI DRIVE ",
           "id":"8"
        },
        {
-          "name":"Sofitel ",
+          "name":"OK MART - HILLSIDE HARARE ",
           "coords":[
              -20.27865,
              57.37215
           ],
-          "city":"Flic en Flac ",
+          "city":"Harare ",
           "id":"9"
        },
        {
-          "name":"The St. Regis Mauritius Resort",
+          "name":"PUREOIL ZIMBABWE- ZIMGOLD72 LYTTON ROAD",
           "coords":[
              -20.43979,
              57.322
           ],
-          "city":"Le Morne",
+          "city":"Harare",
           "id":"10"
        },
        {
-          "name":"SSR International Airport",
+          "name":"1 CHALES PRINCE AIRPORT ROAD",
           "coords":[
              -20.429712,
              57.66075
           ],
-          "city":"Plaine Magnien ",
+          "city":"Harare",
           "id":"11"
        },
        {
-          "name":"Dr AG Jeetoo Hospital",
+          "name":"8 NEW DAVIES WAY, WATERFALLS",
           "coords":[
              -20.17258,
              57.505
           ],
-          "city":"Port Louis",
+          "city":"Harare",
           "id":"12"
        },
        {
-          "name":"Moka E.N.T Hospital",
+          "name":"BILJEN SERVICESCORNER KAMBUZUMA ROAD AND HIGHGLEN ROAD",
           "coords":[
              -20.21743,
              57.49222

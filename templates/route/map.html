@@ -6,18 +6,62 @@
 <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Profile</h1>
+      <h1>Map</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="{%  url 'home' %}">Home</a></li>
           <li class="breadcrumb-item">Route</li>
           <li class="breadcrumb-item active">Map</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
+    <section>
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Optimal Routes for Vehicles </h5>
 
-   
+            <!-- List group with Advanced Contents -->
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Vehicle 1 :</h5>
+                </div>
+                <p class="mb-1">Dharwizi ---> 150 ENTERPRISE ROAD, HIGHLANDS ---> SEAPRIDES FOODS: MUKUVISI STAND 18363 ---> 324 HARROW ROAD ---> Dharwizi</p>
+                <small>88.781 kilometers</small>
+                <small>1:43:00</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Vehicle 2 :</h5>
+                </div>
+                <p class="mb-1">Dharwizi ---> TV SALES AND HOME, 16 KELVIN ROAD  ---> WAVERLY BLANKETS: 122 KELVIN ROAD SOUTH ---> Dharwizi</p>
+                <small>90.37 kilometers</small>
+                <small>1:09:00</small>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Vehicle 3 :</h5>
+                </div>
+                <p class="mb-1"> Dharwizi ---> SHASHA TOBACCO: 376 LIMPOPO WAY ---> OK MART - HILLSIDE HARARE  ---> Dharwizi</p>
+                <small>90.37 kilometers</small>
+                <small>1:34:50</small>
+              </a>
+            </div><!-- End List group Advanced Content -->
 
-  </main>
+          </div>
+        </div>
 
+
+        
+
+          <div class="col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m40!1m12!1m3!1d121532.7647550118!2d30.952769296496694!3d-17.843373763241843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m25!3e0!4m5!1s0x1931bb86352b3089%3A0xfb8f9b38e5558959!2sPuma%20service%20station%2C%20Mutare%20Road%2C%20Harare!3m2!1d-17.8356672!2d31.107381099999998!4m5!1s0x1931bb817c665c7b%3A0x5a77cf8035b81e3e!2sDharwizi%20250%20Williams%20Way%20Harare!3m2!1d-17.8456659!2d31.128597!4m5!1s0x1931bca133a4c6ef%3A0x8478bf6db7a89f25!2sChadcombe%20Shopping%20Centre%2C%20Harare!3m2!1d-17.859796499999998!2d31.096783799999997!4m5!1s0x1931a7ea8b625db1%3A0x31ee450b0db6183d!2sPuma%20Service%2C%201st%20Street%2C%20Kuwadzana%2C%20Harare!3m2!1d-17.8220202!2d30.917469299999997!5e0!3m2!1sen!2szw!4v1657143810699!5m2!1sen!2szw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+
+      </div>
+  </section>
+
+</main>
 {%  endblock  %}

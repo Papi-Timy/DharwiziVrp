@@ -3,7 +3,7 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="#" class="logo d-flex align-items-center">
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
         <img src="{% static '/img/logo.png' %}" alt="">
         <span class="d-none d-lg-block">Dharwizi</span>
       </a>
@@ -45,8 +45,8 @@
             <li class="notification-item">
               <i class="bi bi-exclamation-circle text-warning"></i>
               <div>
-                <h4>Lorem Ipsum</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
+                <h4>Timothy</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>30 min. ago</p>
               </div>
             </li>
@@ -58,8 +58,8 @@
             <li class="notification-item">
               <i class="bi bi-x-circle text-danger"></i>
               <div>
-                <h4>Atque rerum nesciunt</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
+                <h4>Takudzwa</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>1 hr. ago</p>
               </div>
             </li>
@@ -71,8 +71,8 @@
             <li class="notification-item">
               <i class="bi bi-check-circle text-success"></i>
               <div>
-                <h4>Sit rerum fuga</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
+                <h4>Tinashe</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>2 hrs. ago</p>
               </div>
             </li>
@@ -84,8 +84,8 @@
             <li class="notification-item">
               <i class="bi bi-info-circle text-primary"></i>
               <div>
-                <h4>Dicta reprehenderit</h4>
-                <p>Quae dolorem earum veritatis oditseno</p>
+                <h4>Tatenda</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <p>4 hrs. ago</p>
               </div>
             </li>
@@ -119,10 +119,10 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{% static '/img/messages-1.jpg' %}" alt="" class="rounded-circle">
+                <img src="{% static '/img/profile-image.png' %}" alt="" class="rounded-circle">
                 <div>
                   <h4>Maria Hudson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                   <p>4 hrs. ago</p>
                 </div>
               </a>
@@ -133,10 +133,10 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{% static '/img/messages-2.jpg' %}" alt="" class="rounded-circle">
+                <img src="{% static '/img/profile-image.png' %}" alt="" class="rounded-circle">
                 <div>
-                  <h4>Anna Nelson</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <h4>Tinashe Mangudya</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                   <p>6 hrs. ago</p>
                 </div>
               </a>
@@ -147,10 +147,10 @@
 
             <li class="message-item">
               <a href="#">
-                <img src="{% static '/img/messages-3.jpg' %}" alt="" class="rounded-circle">
+                <img src="{% static '/img/profile-image.png' %}" alt="" class="rounded-circle">
                 <div>
-                  <h4>David Muldon</h4>
-                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <h4>Timothy mafa </h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
                   <p>8 hrs. ago</p>
                 </div>
               </a>
@@ -170,7 +170,7 @@
         <li class="nav-item dropdown pe-3">
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="{% static  '/img/profile-img.jpg' %}" alt="Profile" class="rounded-circle">
+            <img src="{% static  '/img/profile-image.png' %}" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">{{request.user}}</span>
           </a><!-- End Profile Iamge Icon -->
 
@@ -229,11 +229,12 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="{% url 'home' %}">
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
+      {% if request.user.is_staff %}
 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
@@ -241,12 +242,12 @@
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="forms-elements.html">
+            <a href="#">
               <i class="bi bi-circle"></i><span>View Route</span>
             </a>
           </li>
           <li>
-            <a href="forms-layouts.html">
+            <a href="#">
               <i class="bi bi-circle"></i><span>Create Routes</span>
             </a>
           </li>
@@ -254,9 +255,8 @@
          
         </ul>
       </li><!-- End Forms Nav -->
+      {% endif %}
 
-
-     
       <li class="nav-heading">Pages</li>
 
       <li class="nav-item">
@@ -265,33 +265,21 @@
           <span>Profile</span>
         </a>
       </li><!-- End Profile Page Nav -->
+      {% if request.user.is_staff %}
+
+
+     
+      
 
       <!-- End F.A.Q Page Nav -->
 
       <!-- End Contact Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{% url 'register' %}">
-          <i class="bi bi-card-list"></i>
-          <span>Add driver </span>
-        </a>
-      </li><!-- End Register Page Nav -->
+      <!--  -->
 
-     <!-- End Login Page Nav -->
-     <li class="nav-item">
-      <a class="nav-link collapsed" href="#">
-        <i class="bi bi-envelope"></i>
-        <span>Contact</span>
-      </a>
-    </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-error-404.html">
-          <i class="bi bi-dash-circle"></i>
-          <span>Error 404</span>
-        </a>
-      </li><!-- End Error 404 Page Nav -->
-
+     
+      <!-- End Error 404 Page Nav -->
+    {% endif %}
      
 
     </ul>
